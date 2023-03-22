@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js && pnpm buildfront",
+    "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
-    "build": "tsc",
-    "buildfront":"cd ../client && pnpm i && pnpm build"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
