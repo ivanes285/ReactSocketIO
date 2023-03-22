@@ -37,10 +37,10 @@ app.use((0, cors_1.default)(optionsCors));
 //Static files
 //?Aqui se configura la carpeta donde se encuentra el dist del frontend para que el servidor pueda servirlo
 //? Agregamos en el script de build cd ../client && pnpm build para que se ejecute el build de react y se cree la carpeta dist en el cliente
-const dist = path_1.default.resolve(__dirname, '../dist');
+const dist = path_1.default.resolve(__dirname, '../../client/dist');
 console.log(dist);
 app.use(express_1.default.static(dist));
 app.get('*', (req, res) => {
-    res.sendFile(path_1.default.resolve(__dirname, '../dist/index.html'));
+    res.sendFile(path_1.default.resolve(__dirname, '../../client/dist/index.html'));
 });
 exports.default = server;

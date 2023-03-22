@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/index.js ",
     "dev": "nodemon src/index.ts ",
-    "build": "tsc && pnpm --prefix ../client build"
+    "build": "tsc && cd ../client && pnpm build"
   },
   "keywords": [],
   "author": "",
