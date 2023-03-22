@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/index.js && pnpm buildfront",
     "dev": "nodemon src/index.ts",
-    "build": "tsc && pnpm buildfront",
+    "build": "tsc",
     "buildfront":"cd ../client && pnpm i && pnpm build"
   },
   "keywords": [],
