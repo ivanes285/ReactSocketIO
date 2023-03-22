@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 //?puente de comunicacion entre el cliente y el servidor
-const socket = io("http://localhost:4000");
+// const socket = io("http://localhost:4000");//Desarrollo
+const socket = io();//Produccion
 
 interface IMessage {
   body: string;
